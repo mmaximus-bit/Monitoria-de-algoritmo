@@ -1,0 +1,45 @@
+# ===============================================================
+# GITIGNORE PARA EXECUTÁVEIS E ARQUIVOS DE COMPILAÇÃO
+# ===============================================================
+
+# --- Sistemas Operacionais ---
+
+# Windows
+# Ignora a extensão de executável padrão do Windows
+*.exe
+# Ignora instaladores e bibliotecas de vínculo dinâmico
+*.msi
+*.dll
+*.scr
+
+# macOS & Linux
+# Ignora arquivos sem extensão que são marcados como executáveis
+# (Este padrão é mais complexo de ser feito por nome, então geralmente
+# ignoramos os diretórios de saída. No entanto, se você compila um
+- # arquivo com um nome específico, pode adicioná-lo diretamente)
+# Exemplo: se você compila um arquivo chamado 'meu_programa'
+meu_programa
+
+# Ignora arquivos de objeto e bibliotecas compartilhadas
+*.o
+*.so
+*.a
+*.out
+
+# --- Diretórios Comuns de Compilação/Saída ---
+
+# Pastas onde os compiladores e ferramentas de build costumam salvar os executáveis
+/build/
+/bin/
+/dist/
+/target/  # Comum em projetos Java/Rust
+/release/
+/debug/
+
+# --- Arquivos de Configuração de IDE ---
+
+# Ignora arquivos gerados pelo VS Code para tarefas de build
+.vscode/launch.json
+.vscode/tasks.json
+
+# ===============================================================

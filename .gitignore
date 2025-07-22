@@ -41,5 +41,5 @@ meu_programa
 # Ignora arquivos gerados pelo VS Code para tarefas de build
 .vscode/launch.json
 .vscode/tasks.json
-
+.vscode/settings.json
 # ===============================================================
